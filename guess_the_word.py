@@ -5,7 +5,8 @@ import random
 os.system('clear')
 
 with open("dictionary.txt") as f:
-    content = f.readlines()
+    lines = f.readlines()
+    lines = [line.rstrip('\n') for line in open('dictionary.txt')]
 
 def find_element_in_string(element, string):
     try:
@@ -25,7 +26,7 @@ if choice == "m":
     answer = raw_input("Input one secret word: ").lower()
     os.system('clear')
 else:
-    answer = (random.choice(content))
+    answer = (random.choice(lines))
 
 # select how many guesses
 guess_selected = False
