@@ -23,6 +23,7 @@ while choice != "m" and choice != "r":
 
 if choice == "m":
     answer = raw_input("Input one secret word: ").lower()
+    os.system('clear')
 else:
     answer = (random.choice(content))
 
@@ -57,7 +58,9 @@ while guesses_remaining > 0:
     print "----- Letter Bank -----"
     print valid_letters
     print "-----------------------"
+    print ""
     print shown
+    print ""
 
     # checks if we have any more spaces we are looking for
     if find_element_in_string("_",shown) == None:
