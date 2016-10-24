@@ -4,6 +4,7 @@ Using repo to recreate some easy text based games.
 If interested in testing some of the programs,
 
 `$ git clone https://github.com/cdeborja/python_test.git` to make a clone of the repo
+
 `$ python guess_the_word.py` to start game.
 
-If you want to test a different program, replace `guess_the_word` with the different file name.
+If you want to test a different program, replace `guess_the_word.py` with the different file name.
